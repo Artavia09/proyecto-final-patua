@@ -1,0 +1,47 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "prettier"
+  ],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "react-hooks"
+  ],
+  "rules": {
+    "no-var": "error",
+    "prefer-const": "error",
+    "no-unused-vars": [
+      "warn",
+      {
+        "argsIgnorePattern": "^_"
+      }
+    ],
+    "max-lines-per-function": [
+      "warn",
+      80
+    ],
+    "max-lines": [
+      "warn",
+      300
+    ],
+    "complexity": [
+      "warn",
+      10
+    ],
+    "max-depth": [
+      "warn",
+      3
+    ],
+    "react/react-in-jsx-scope": "off"
+  }
+}
